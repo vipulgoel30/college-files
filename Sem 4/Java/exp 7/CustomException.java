@@ -1,15 +1,8 @@
 import java.util.Scanner;
 
 class MyException extends Exception {
-  String message;
-
   MyException(String s) {
-    super();
-    this.message = s;
-  }
-
-  public void display() {
-    System.out.println(this.message);
+    super(s);
   }
 }
 
@@ -24,7 +17,7 @@ public class CustomException {
         throw new MyException("Height cannot be 0");
       }
     } catch (MyException my) {
-      my.display();
+      System.out.println(my);
     } finally {
       System.out.println("Inputted height : " + height);
     }
