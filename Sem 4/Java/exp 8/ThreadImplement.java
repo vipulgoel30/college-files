@@ -56,7 +56,6 @@ public class ThreadImplement {
       t.join();
       System.out.println("Thread created using thread class isAlive() : " + tc.isAlive());
 
-      System.out.println("Thread created using thread class isAlive() : " + tc.isAlive());
       System.out.println("Thread created using runnable interface priority : " + t.getPriority());
 
       System.out.println("Main thread");
